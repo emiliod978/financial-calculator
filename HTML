@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emilio Delacruz Financial Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Financial Calculator</h1>
+
+  <!-- Return Calculator -->
+  <div class="card">
+    <h2>Return Calculator</h2>
+
+    <input type="number" id="initialPrice" placeholder="Initial Price">
+    <input type="number" id="finalPrice" placeholder="Final Price">
+    <input type="number" id="dividends" placeholder="Dividends">
+    <input type="number" id="years" placeholder="Years Held">
+
+    <button onclick="calculateReturn()">Calculate Returns</button>
+
+    <p id="hprResult"></p>
+    <p id="annualResult"></p>
+  </div>
+
+  <!-- Risk Calculator -->
+  <div class="card">
+    <h2>Risk Calculator (Sharpe Ratio)</h2>
+
+    <input type="number" id="avgReturn" placeholder="Average Return (%)">
+    <input type="number" id="riskFree" placeholder="Risk-Free Rate (%)">
+    <input type="number" id="stdDev" placeholder="Standard Deviation (%)">
+
+    <button onclick="calculateSharpe()">Calculate Sharpe Ratio</button>
+
+    <p id="sharpeResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
